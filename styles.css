@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(4,1fr); /* Three rows to fit all items */
+    gap: 10px;
+    border: 3px solid #000;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.user-1 {
+    grid-column-start: 1; 
+  grid-column-end: 3;
+    
+    grid-row-end: 3;
+    grid-row-start: 1;
+    background-color: #0fc1d8;
+    border: 2px solid #d48f8f;
+    padding: 20px;
+}
+
+.user-2 {
+   background: #312b2b;
+   grid-column-start: 3;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   color: white;
+}
+
+
+.user-3 {
+    background: white;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+     
+    
+}
+.user-4{
+    background: #000;
+    color: white;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-end:4;
+    grid-column-start: 2;
+}
+
+.user-5{
+    background: hsl(0, 16%, 96%);
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 5;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc; /* Placeholder for missing images */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
